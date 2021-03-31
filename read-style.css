@@ -1,0 +1,194 @@
+@import url('https://fonts.googleleapis.com/css?family=Montserrat:500');
+
+* {
+   /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+/*
+li, a, button{
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    color: aquamarine;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px 10%;
+}*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+   /* scroll-snap-type: y mandatory; */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+   /* scroll-snap-align: center; */
+}
+
+section h1 {
+    font-size: calc(18px + 1.5vw);
+}
+
+section p {
+    font-size: calc(12px + 1vw);
+}
+
+/* Section Images */
+section#history {
+    background: url('img/philosophy.jpg') no-repeat center center/cover;;
+}
+  
+section#education {
+    background: url('img/lib.jpg') no-repeat center center/cover;;
+}
+  
+section#experience {
+    background: url('img/pen.jpg') no-repeat center center/cover;;
+}
+  
+section#summary {
+    background: url('img/latin-corner.jpg') no-repeat center center/cover;;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(5, 238, 255);
+    transition: opacity 1s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+/*
+@media screen and (max-width: 750px){
+    .container {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    #fullpage{
+        height:100vh;
+        display: block;
+    }
+    #fullpage section:nth-child(1){
+        height:100vh;
+    }
+    #fullpage section:nth-child(2){
+        height:100vh;
+    }
+    #fullpage section:nth-child(3){
+        height:100vh;
+    }
+    #fullpage section:nth-child(4){
+        height:100vh;
+    }
+    .navbar ul li{
+        display: inline-block;
+        text-align: left;
+        width: 0rem;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.1rem;
+        width: 0rem;
+    }
+    section h1 {
+        font-size: 1.5rem;
+    }
+    
+    section p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1336px)and (min-width: 751px){
+    .container {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .navbar ul{
+        position:relative;
+        width: 100%;
+        height: 100vh;
+        top: 10px;
+        left: 0;
+        font-size: 0.1rem;
+        
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar ul li a{
+        margin-bottom:12px;
+        font-size: 0.5rem;
+        display: inline-block;
+        width: 25px;
+        }
+    section h1 {
+        font-size: 3rem;
+    }
+    
+    section p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1336px){
+    .navbar ul{
+        position:relative;
+        width: 100%;
+        height: 100vh;
+        top: 10px;
+        left: 0;
+        font-size: 1.5rem;
+        
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar ul li a{
+        margin-bottom:12px;
+        font-size: 2rem;
+        display: inline-block;
+        width: 25px;
+        }
+    section h1 {
+        font-size: 3rem;
+    }
+    
+    section p {
+        font-size: 1.2rem;
+    }
+}*/
